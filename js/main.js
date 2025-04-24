@@ -108,3 +108,23 @@ window.addEventListener('scroll',function(){
 
   }
 });
+
+// 모바일용 메뉴
+const btnHamburger = document.querySelector('.btn-hamburger');
+const navEl = document.querySelector('header nav');
+
+btnHamburger.addEventListener('click', function(){
+  // if(navEl.classList.contains('active')){
+  //   navEl.classList.remove('active');
+  // }else{
+  //   navEl.classList.add('active')
+  // }
+  navEl.classList.toggle('active');
+})
+
+const aEls = document.querySelectorAll('header nav ul li a');
+aEls.forEach(function(aEl){
+  aEl.addEventListener('click', function(){
+    navEl.classList.remove('active');
+  })
+})
