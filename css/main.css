@@ -555,6 +555,9 @@ footer .copyright{
   header nav.active{
     height: 100%;
   }
+  .visual > .inner{
+    font-size: 30px;
+  }
   .about{
     padding: 100px 0;
   }
